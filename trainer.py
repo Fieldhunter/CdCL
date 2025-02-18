@@ -66,7 +66,7 @@ class Trainer():
         self.loss.start_log()
         self.model.train()
 
-        # setting 1 or 2
+        # TODO: setting 1 or 2
         degrade = util.SRMDPreprocessing(
             self.scale[0],
             kernel_size=self.args.blur_kernel,
@@ -78,7 +78,7 @@ class Trainer():
             noise=self.args.noise
         )
 
-        # setting 3
+        # TODO: setting 3
         # degrade = util.complex_SRMDPreprocessing(
         #     self.scale[0],
         #     kernel_size=self.args.blur_kernel,
@@ -178,7 +178,7 @@ class Trainer():
                 eval_psnr = 0
                 eval_ssim = 0
 
-                # setting 1 or 2
+                # TODO: setting 1 or 2
                 degrade = util.SRMDPreprocessing(
                     self.scale[0],
                     kernel_size=self.args.blur_kernel,
@@ -190,7 +190,7 @@ class Trainer():
                     noise=self.args.noise
                 )
 
-                # setting 3
+                # TODO: setting 3
                 # degrade = util.complex_SRMDPreprocessing(
                 #     self.scale[0],
                 #     kernel_size=self.args.blur_kernel,
@@ -208,10 +208,10 @@ class Trainer():
                     hr = hr.cuda()                      # b, 1, c, h, w
                     hr = self.crop_border(hr, scale)
 
-                    # setting 1 or 2
+                    # TODO: setting 1 or 2
                     lr = degrade(hr, random=False)[:, 0, ...]
                     hr = hr[:, 0, ...]
-                    # setting 3
+                    # TODO: setting 3
                     # hr = hr[:, 0, ...]
                     # lr = degrade(hr, random=False)
 

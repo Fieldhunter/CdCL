@@ -118,7 +118,7 @@ class Model(nn.Module):
         elif resume > 0:
             self.get_model().load_state_dict(
                 torch.load(os.path.join(apath, 'model', 'model_{}.pt'.format(resume)), **kwargs),
-                strict=True
+                strict=False
             )
 
     def forward_chop(self, x, shave=10, min_size=160000):
