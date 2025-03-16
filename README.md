@@ -50,5 +50,10 @@ Run `./test.sh` to test on benchmark datasets. Please update `dir_data` in the b
 
 ## 🔥Citation
 ```
-xxxxx
+@article{yuan2024content,
+  title={Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution},
+  author={Yuan, Jiang and Ma, Ji and Wang, Bo and Hu, Weiming},
+  journal={arXiv preprint arXiv:2408.05440},
+  year={2024}
+}
 ```
