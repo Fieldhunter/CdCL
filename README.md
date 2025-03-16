@@ -26,6 +26,8 @@ Implicit degradation modeling-based blind super-resolution (SR) has attracted mo
 Run `./main.sh` to train on the DF2K dataset. Please update `dir_data` in the bash file as `your_data_path`.
 
 
+## 🏰 Model Zoo
+
 ## 🔥Test
 ### 1. Prepare test data 
 Download [benchmark datasets](https://github.com/xinntao/BasicSR/blob/a19aac61b277f64be050cef7fe578a121d944a0e/docs/Datasets.md) (e.g., Set5, Set14 and other test sets) and prepare HR/LR images in `your_data_path/benchmark`.
@@ -40,9 +42,6 @@ Run `./test.sh` to test on benchmark datasets. Please update `dir_data` in the b
 
 
 
-## 🔥Visualization of Degradation Representations
-
-
 ## 🔥Comparative Results
 ### Noise-Free Degradations with Isotropic Gaussian Kernels
 
@@ -53,7 +52,7 @@ Run `./test.sh` to test on benchmark datasets. Please update `dir_data` in the b
 @article{yuan2024content,
   title={Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution},
   author={Yuan, Jiang and Ma, Ji and Wang, Bo and Hu, Weiming},
-  journal={arXiv preprint arXiv:2408.05440},
-  year={2024}
+  journal={IEEE Transactions on Image Processing},
+  year={2025}
 }
 ```
