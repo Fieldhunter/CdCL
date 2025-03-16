@@ -15,7 +15,9 @@ Implicit degradation modeling-based blind super-resolution (SR) has attracted mo
 <p align="center"> <img src="Figs/Fig2.jpg" width="100%"> </p>
 
 ## 🔥Requirements
-
+xxx
+xxx
+xxx
 
 ## 🔥Train
 ### 1. Prepare training data 
