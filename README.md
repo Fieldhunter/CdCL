@@ -1,5 +1,5 @@
 # Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution
-------------------------------------------
+
 Created by [Jiang Yuan](), [Ji Ma](), [Bo Wang](), [Weiming Hu]()
 
 [[arXiv]](https://arxiv.org/abs/2408.05440) [[supp]]()
