@@ -50,24 +50,24 @@ parser.add_argument('--blur_type', type=str, default='iso_gaussian',
                     help='blur types (iso_gaussian | aniso_gaussian)')
 parser.add_argument('--mode', type=str, default='bicubic',
                     help='downsampler (bicubic | s-fold)')
-parser.add_argument('--noise', type=float, default=20.0,
+parser.add_argument('--noise', type=float, default=10.0,
                     help='noise level')
 parser.add_argument('--noise_min', type=float, default=1.0,
-                    help='noise level')
+                    help='noise min value')
 parser.add_argument('--noise_max', type=float, default=30.0,
-                    help='noise level')
-parser.add_argument('--jpeg', type=float, default=60.0,
+                    help='noise max value')
+parser.add_argument('--jpeg', type=float, default=80.0,
                     help='jpeg level')
 parser.add_argument('--jpeg_min', type=float, default=40.0,
-                    help='jpeg level')
+                    help='jpeg min value')
 parser.add_argument('--jpeg_max', type=float, default=95.0,
-                    help='jpeg level')
+                    help='jpeg max value')
 ## isotropic Gaussian blur
 parser.add_argument('--sig_min', type=float, default=0.1,
                     help='minimum sigma of isotropic Gaussian blurs')
 parser.add_argument('--sig_max', type=float, default=3.0,
                     help='maximum sigma of isotropic Gaussian blurs')
-parser.add_argument('--sig', type=float, default=2.0,
+parser.add_argument('--sig', type=float, default=1.0,
                     help='specific sigma of isotropic Gaussian blurs')
 ## anisotropic Gaussian blur
 parser.add_argument('--lambda_min', type=float, default=0.2,

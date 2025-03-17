@@ -424,7 +424,6 @@ class SRMDPreprocessing(object):
             elif self.mode == 's-fold':
                 lr_blured = hr_blured.view(-1, C, H//self.scale, self.scale, W//self.scale, self.scale)[:, :, :, 0, :, 0]
 
-
             # add noise
             if self.noise > 0:
                 _, C, H_lr, W_lr = lr_blured.size()

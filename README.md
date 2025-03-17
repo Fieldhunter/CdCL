@@ -1,72 +1,34 @@
 # Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution
 
-Created by [Jiang Yuan](), [Ji Ma](), [Bo Wang](), [Weiming Hu]()
-
-[[arXiv]](https://arxiv.org/abs/2408.05440) [[supp]]()
-
-This repository contains PyTorch implementation for __Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution__ (Accepted by TIP).
-
-## 🔥Abstract
-Implicit degradation modeling-based blind super-resolution (SR) has attracted more increasing attention in the community due to its excellent generalization to complex degradation scenarios and wide application range. How to extract more discriminative degradation representations and fully adapt them to specific image features is the key to this task. In this paper, we propose a new Content-decoupled Contrastive Learning-based blind image super-resolution (CdCL) framework following the typical blind SR pipeline.This framework introduces negative-free contrastive learning technique for the first time to model the implicit degradation representation, in which a new cyclic shift sampling strategy is designed to ensure decoupling between content features and degradation features from the data perspective, thereby improving the purity and discriminability of the learned implicit degradation space. In addition, we propose a detail-aware implicit degradation adapting module that can better adapt degradation representations to specific LR features by enhancing the basic adaptation unit's perception of image details, significantly reducing the overall SR model complexity. Extensive experiments on synthetic and real data show that our method achieves highly competitive quantitative and qualitative results in various degradation settings while obviously reducing parameters and computational costs, validating the feasibility of designing practical and lightweight blind SR tools.
-
-## 🔥Overview
-<p align="center"> <img src="Figs/Fig1.jpg" width="100%"> </p>
-
-<p align="center"> <img src="Figs/Fig2.jpg" width="100%"> </p>
-
-## 🔥Requirements
-xxx
-
-xxx
-
-xxx
+Created by [Jiang Yuan](https://github.com/Fieldhunter), [Ji Ma](https://github.com/MJ-NCEPU), [Bo Wang](https://github.com/wangbo2016), Weiming Hu
 
 
-## 🔥Train
+## Train
 ### 1. Prepare training data 
 
 1.1 Download the [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/)  dataset and the [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) dataset.
 
-1.2 Combine the HR images from these two datasets in `your_data_path/DF2K/HR` to build the DF2K dataset. 
+1.2 Combine the HR images from these two datasets in `./datasets/DF2K/HR` to build the DF2K dataset. 
 
-### 2. Begin to train
-Run `./main.sh` to train on the DF2K dataset. Please update `dir_data` in the bash file as `your_data_path`.
+### 2. change degradation config
 
+Change the TODO section in `main.sh`, `option.py` and `trainer.py` to select the corresponding degradation settings.
 
-## 🏰 Model Zoo
-Please download checkpoints from [Google Drive]().
+### 3. Begin to train
+Run `main.sh` to train on the DF2K dataset.
 
-## 🔥Test
+## Test
 ### 1. Prepare test data 
-Download [benchmark datasets](https://github.com/xinntao/BasicSR/blob/a19aac61b277f64be050cef7fe578a121d944a0e/docs/Datasets.md) (e.g., Set5, Set14 and other test sets) and prepare HR/LR images in `your_data_path/benchmark`.
+Download [benchmark datasets](https://github.com/xinntao/BasicSR/blob/a19aac61b277f64be050cef7fe578a121d944a0e/docs/Datasets.md) (e.g., Set5, Set14 and other test sets) and prepare HR/LR images in `./datasets/benchmark`.
 
+### 2. change degradation config
 
-### 2. Begin to test
-Run `./test.sh` to test on benchmark datasets. Please update `dir_data` in the bash file as `your_data_path`.
+Change the TODO section in `test.sh`, `option.py` and `trainer.py` to select the corresponding degradation settings.
 
+### 3. Begin to test
+Run `test.sh` to test on benchmark datasets.
 
-
-## 🔥Visualization of Degradation Representations
-<p align="center"> <img src="Figs/Fig3.jpg" width="50%"> </p>
-
-
-## 🔥Comparative Results
-### Noise-Free Degradations with Isotropic Gaussian Kernels
-<p align="center"> <img src="Figs/Fig4.jpg" width="100%"> </p>
-
-<p align="center"> <img src="Figs/Fig5.jpg" width="100%"> </p>
-
-### General Degradations with Anisotropic Gaussian Kernels and Noises
-<p align="center"> <img src="Figs/Fig6.jpg" width="100%"> </p>
-
-<p align="center"> <img src="Figs/Fig7.jpg" width="100%"> </p>
-
-## 🔥Citation
+## Citation
 ```
-@article{yuan2024content,
-  title={Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution},
-  author={Yuan, Jiang and Ma, Ji and Wang, Bo and Hu, Weiming},
-  journal={IEEE Transactions on Image Processing},
-  year={2025}
-}
+
 ```

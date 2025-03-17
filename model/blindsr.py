@@ -13,7 +13,7 @@ def make_model(args):
 class da_conv(nn.Module):
     def __init__(self, channels_in, channels_out, reduction):
         super(da_conv, self).__init__()
-        self.loc = channel_adaption(channels_in, channels_out, reduction)
+        self.loc = channel_adaptation(channels_in, channels_out, reduction)
 
         self.sig1 = nn.Sequential(
             nn.Conv2d(16, 16, 3, 1, 1),
@@ -34,7 +34,7 @@ class da_conv(nn.Module):
         return out
 
 
-class channel_adaption(nn.Module):
+class channel_adaptation(nn.Module):
     def __init__(self, channels_in, channels_out, reduction):
         super().__init__()
         # channel attention

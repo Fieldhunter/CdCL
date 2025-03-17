@@ -55,7 +55,7 @@ class Trainer():
                 param_group['lr'] = lr
         else:
             if epoch > self.args.epochs_encoder and epoch <= (self.args.epochs_encoder + 5):
-                lr = self.args.max_lr_sr * (epoch - 100) / 5
+                lr = self.args.max_lr_sr * (epoch - self.args.epochs_encoder) / 5
             else:
                 lr = self.args.min_lr_sr + (self.args.max_lr_sr - self.args.min_lr_sr) * \
                      (1 + math.cos((epoch - (self.args.epochs_encoder + 5)) / (self.args.epochs_sr - 5) * math.pi)) / 2

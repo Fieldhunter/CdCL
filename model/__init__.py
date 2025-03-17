@@ -3,8 +3,7 @@ from importlib import import_module
 
 import torch
 import torch.nn as nn
-from collections import OrderedDict
-from itertools import chain
+
 
 class Model(nn.Module):
     def __init__(self, args, ckp, loader):
@@ -42,7 +41,6 @@ class Model(nn.Module):
                     torch.load(os.path.join(ckp.dir, 'model', 'model_{}.pt'.format(args.resume))),
                     strict=True
                 )
-
 
         if not args.cpu and args.n_GPUs > 1:
             self.model = torch.nn.parallel.DistributedDataParallel(self.model, [loader.local_rank])
