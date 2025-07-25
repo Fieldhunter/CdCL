@@ -2,7 +2,7 @@
 
 Created by [Jiang Yuan](https://github.com/Fieldhunter), [Ji Ma](https://github.com/MJ-NCEPU), [Bo Wang](https://github.com/wangbo2016), Weiming Hu
 
-
+This repository contains PyTorch implementation for Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution (Accepted by IEEE TIP 2025).
 ## Train
 ### 1. Prepare training data 
 
