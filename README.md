@@ -1,5 +1,7 @@
 # Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution
 
+[[paper](https://ieeexplore.ieee.org/document/10964088)]
+
 Created by [Jiang Yuan](https://github.com/Fieldhunter), [Ji Ma](https://github.com/MJ-NCEPU), [Bo Wang](https://github.com/wangbo2016), Weiming Hu
 
 This repository contains PyTorch implementation for Content-decoupled Contrastive Learning-based Implicit Degradation Modeling for Blind Image Super-Resolution (Accepted by IEEE TIP 2025).
@@ -30,5 +32,12 @@ Run `test.sh` to test on benchmark datasets.
 
 ## Citation
 ```
-
+@article{10964088,
+  author={Yuan, Jiang and Ma, Ji and Wang, Bo and Hu, Weiming},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Content-Decoupled Contrastive Learning-Based Implicit Degradation Modeling for Blind Image Super-Resolution}, 
+  year={2025},
+  volume={34},
+  pages={4751-4766},
+  doi={10.1109/TIP.2025.3558442}}
 ```
